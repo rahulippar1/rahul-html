@@ -3,7 +3,7 @@
 <style>
 body {
 font-family: calibri;
-font-size: 16px;
+font-size: 18px;
 }
 input[type=text], select {
   width: 100%;
@@ -24,6 +24,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 input[type=submit]:hover {
@@ -39,6 +40,7 @@ input[type=reset] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 input[type=reset]:hover {
@@ -51,6 +53,11 @@ div {
   padding: 20px;
 }
 </style>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
 
 <h3><center>Rahul Expenses</center></h3>
@@ -70,6 +77,7 @@ div {
 	
 	<label for="paymentmethod">Payment Method</label>
     <select id="paymentmethod" name="PayMethod" required>
+      <option value="icici">Cash</option>
       <option value="icici">ICICI CC</option>
       <option value="uni">UNI CC</option>
       <option value="indusing">INDUSIND CC</option>
@@ -77,6 +85,9 @@ div {
       <option value="canada">PhonePe</option>
       <option value="gpay">Gpay</option>
 	  <option value="paytm">Paytm</option>
+	  <option value="icici">Slice CC</option>
+      <option value="icici">RBL CC</option>
+
 	  <option value="gpay">Other</option> 
     </select>
 	
@@ -84,8 +95,8 @@ div {
 	<label for="comments">Comments</label>
     <input type="text" id="lname" name="Comments" placeholder="Any more information?">
   
-    <input type="submit" value="Submit" name="Submit">
-	<input type="reset" value="Reset">
+    <input type="submit" value="SUBMIT" name="Submit">
+	<input type="reset" value="CLEAR">
   </form>
 </div>
 
